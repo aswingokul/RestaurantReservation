@@ -1,0 +1,20 @@
+html{
+    background: #227e2f;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: -webkit-radial-gradient(10% 50%, circle, #1B2E41, rgba(255, 255, 255, 0)), -webkit-radial-gradient(50% 50%, circle, rgba(255, 255, 255, 0.63), #57646E), -webkit-radial-gradient(110% 50%, circle, #2B3846, rgba(255, 255, 255, 0));;
+}
+
+body{
+    font-family: FontAwesome;
+    background: none;
+}
+section{ margin: auto;}
+
+.container{
+    font-size: 0.9em;
+}
+
+.navbar-brand{
+    color:#28C9D3;
+}

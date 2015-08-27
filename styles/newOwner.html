@@ -5,11 +5,394 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Owner </title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
-    <title></title>
+    <!--<link rel="stylesheet" href="myStyle.css" type="text/css">-->
+    <title>Owner Home</title>
 </head>
 <body>
+<header>
+    <div class = "navbar navbar-default">
+        <div class = "container">
+            <div class = "navbar-header">
+                <button class = "navbar-toggle collapsed" type="button" data-toggle = "collapse" data-target = ".options">
+                    <span class = "sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href = "#" class = "navbar-brand">
+                    <span class="glyphicon glyphicon-cutlery"></span>Taste of India
+                </a>
+            </div>
+            <div class = "options collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a heref="#">Link1</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container" id="ownerHome">
+        <ul class="nav nav-pills nav-justified">
+            <li class="active">
+                <a href="#pill-reservation" data-toggle="pill">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    <span class="tab-text">Reservation</span>
+                </a>
+            </li>
+            <li>
+                <a href="#pill-seating" data-toggle="pill">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="tab-text">Seating</span>
+                </a>
+            </li>
+            <li>
+                <a href="#pill-owner" data-toggle="pill">
+                    <span class="glyphicon glyphicon-list"></span>
+                    <span class="tab-text">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#pill-settings" data-toggle="pill">
+                    <span class="glyphicon glyphicon-cog"></span>
+                    <span class="tab-text">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#pill-contacts" data-toggle="pill">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="tab-text">Contacts</span>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" id="content">
+            <div class="tab-pane active" id="pill-reservation">
+                <h5>Reservation List</h5>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Reservation" id="input-search">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+                <ul class="pagination pull-right">
+                    <li><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+                <table class="table table-condensed table-striped">
+                    <thead>
+                    <tr>
+                        <th>CNF#</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>#</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DA83CD</td>
+                        <td>Sachin Tendulkar</td>
+                        <td>05/10/2014 1:30PM</td>
+                        <td>4</td>
+                        <td>
+                            <button class="btn btn-primary" title="Open Details">
+                                <span class="glyphicon glyphicon-share"></span>
+                                <span class="btn-text">Details</span>
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane" id="pill-seating">
+                <h5>Seating Area</h5>
+                <div class="container">
+                    <div class="col-xs-12 col-sm-6">
+                        <table class="table table-striped table-condensed">
+                            <thead>
+                            <th>Table#</th>
+                            <th>Size</th>
+                            <th>Status</th>
+                            <th>Since</th>
+                            <th>CNF#</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Occupied</td>
+                                <td>1:30PM</td>
+                                <td>
+                                    <button class="btn btn-link">DA83CD</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Available</td>
+                                <td>-</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Occupied</td>
+                                <td>1:30PM</td>
+                                <td>
+                                    <button class="btn btn-link">DA83CD</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Occupied</td>
+                                <td>1:30PM</td>
+                                <td>
+                                    <button class="btn btn-link">DA83CD</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Available</td>
+                                <td>-</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Occupied</td>
+                                <td>1:30PM</td>
+                                <td>
+                                    <button class="btn btn-link">DA83CD</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Available</td>
+                                <td>-</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>4</td>
+                                <td>Available</td>
+                                <td>-</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="container">
+                            <div class="col-md-4">
+                                <div class="seats img-rounded">
+                                    <p>Table #1</p>
+                                    <p>Occupied</p>
+                                    <p>
+                                        <button class="btn btn-link">DA83CD</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="seats img-circle">
+                                    <p>Table #1</p>
+                                    <p>Occupied</p>
+                                    <p>
+                                        <button class="btn btn-link">DA83CD</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="seats img-rounded">
+                                    <p>Table #1</p>
+                                    <p>Occupied</p>
+                                    <p>
+                                        <button class="btn btn-link">DA83CD</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="pill-owner">
+                <h5>Login</h5>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="example@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <button type="button" class="btn btn-link">Forgot Password?</button>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane" id="pill-settings">
+                <h5>Login</h5>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="example@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <button type="button" class="btn btn-link">Forgot Password?</button>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane" id="pill-contacts">
+                <h5>Login</h5>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="example@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                        <button type="button" class="btn btn-link">Forgot Password?</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
 </body>
 </html>
